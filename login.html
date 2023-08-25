@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="login.css">
+</head>
+<body>
+
+<div class="btn-group" align="center">
+	<div class="button-content">
+	<h2>Login</h2>
+	<button onclick="document.getElementById('Public').style.display='block'" style="width:auto;">Public Users</button>
+	<button onclick="document.getElementById('Member').style.display='block'" style="width:auto;">Member Login</button>
+	<button onclick="document.getElementById('Admin').style.display='block'" style="width:auto;">Admin Staff</button>
+	<button onclick="document.getElementById('Register').style.display='block'" style="width:auto;" class="btn-primary">Register</button>
+</div>
+</div>
+
+<div id="Public" class="login">
+  <form class="login-content animate" action="login.php" method="post">
+  <p>Simply click login to continue</p>
+    <div class="container">
+      <label style="display:none;" for="email"><b>Username</b></label>
+      <input style="display:none;" type="text" value="public@gmail.com" name="email" required>
+
+      <label style="display:none;" for="password"><b>Password</b></label>
+      <input style="display:none;" type="password" value="Public User" name="password" required>
+        
+      <button type="submit"  name="btn" value="PublicUser">Login</button>
+    </div>
+    <div class="container" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('Public').style.display='none'" class="cancelbtn">Cancel</button>
+    </div>
+  </form>
+</div>
+<div id="Register" class="login">
+  <form class="login-content animate" action="register.php" method="post">
+    <div class="container">
+      <label for="username"><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="username" required>
+
+      <label for="email"><b>Email</b></label>
+      <input type="email" placeholder="Enter Email" name="email" required>
+      
+      <label for="password"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="password" required>
+      
+      <input type="hidden" name="action" />
+      <button type="submit" name="btn" value="Register">Register</button>
+    </div>
+    <div class="container" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('Register').style.display='none'" class="cancelbtn">Cancel</button>
+    </div>
+  </form>
+</div>
+
+<div id="Member" class="login">
+  <form class="login-content animate" action="login.php" method="post">
+    <div class="container">
+      <label for="email"><b>Email</b></label>
+      <input type="email" placeholder="Enter Email" name="email" required>
+      
+      <label for="password"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="password" required>
+      
+      <button type="submit" name="btn" value="MemberUser">Login</button>
+    </div>
+    <div class="container" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('Member').style.display='none'" class="cancelbtn">Cancel</button>
+    </div>
+  </form>
+</div>
+
+<div id="Admin" class="login">
+  <form class="login-content animate" action="login.php" method="post">
+    <div class="container">
+      <label for="email"><b>Email</b></label>
+      <input type="email" placeholder="Enter Email" name="email" required>
+
+      <label for="password"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="password" required>
+        
+      <button type="submit" name="btn" value="AdminUser">Login</button>
+    </div>
+    <div class="container" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('Admin').style.display='none'" class="cancelbtn">Cancel</button>
+    </div>
+  </form>
+</div>
+
+<script>
+var login = document.getElementById('Admin');
+
+// When the user clicks anywhere outside of the login, close it
+window.onclick = function(event) {
+    if (event.target == login) {
+        login.style.display = "none";
+    }
+}
+</script>
+
+</body>
+</html>

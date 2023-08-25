@@ -1,0 +1,106 @@
+/*.grid-container-product{
+	display:grid;
+	grid-template-columns:60% 40%;
+}
+
+body{
+	font-family:"Helvetica Neue", Helvetica, sans-serif;
+	color:black;
+	line-height:1.6rem;
+	padding-bottom:0.5rem;
+	padding-top:0.5rem;
+}
+#page{
+	max-width:1200px;
+	margin:0 auto;
+	padding-left:2%;
+	padding-right:2%;
+}
+
+
+h2{
+	font-weight:bold;
+	font-size:1.4rem;
+	margin-bottom:0.5rem;
+	color:#A0C33F; /*green*//*
+	font-family:Georgia, serif;
+}
+
+.productimg{
+	max-width: 80%;
+	object-fit: cover;
+	padding:1rem 2%;
+}
+.productdesc{
+	padding:1rem 2%;
+}*/
+
+* {box-sizing: border-box;}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  color:red;
+}
+
+p{
+	line-height: 1.5;
+	margin-bottom: 16px;
+}
+
+/*Conatct Form*//*
+
+input[type=text], select, textarea{
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  resize: vertical;
+}
+
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@media screen and (max-width: 600px) {
+  .col-25, .col-75, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}*/
