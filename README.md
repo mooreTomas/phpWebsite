@@ -8,3 +8,7 @@ A dynamic web application written in PHP with an SQL backed. The web application
 - Users can add testimonials after logging in/registering
 - Public users can view the website without logging in
 - Children can be registered for the service, at which point a confirmatory email will be sent to the user
+
+- Recommended way of running this:
+
+Put project files in the *htdocs* folder of XAMPP. Set up the database by using the SQL dump file included.
